@@ -18,7 +18,7 @@ Joseph Sylvanovich
 <img src="http://g.recordit.co/R10dH2OjNZ.gif" width=250><br>
 
 ### Notes
-
+One thing that was challenging: Implementing the steps of what I have learned in order to design the DetailViewController after a user is presented the MovieGridViewController screen. 
 
 
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
