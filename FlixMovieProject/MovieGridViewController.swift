@@ -68,14 +68,25 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.posterView.af_setImage(withURL: posterUrl!)
         return cell
     }
-    /*
+    
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        print("loading")
+        
+        //find the selected movie
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        
+        //pass the movie to the detail view controller
+        let detailViewController = segue.destination as! DetailViewController
+        detailViewController.movie = movie
     }
-    */
 
 }
